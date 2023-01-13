@@ -7,7 +7,8 @@ const app = express();
 const PORT = 3005;
 
 mongoose.connect(
-  "mongodb+srv://Andrei:jw1914@cluster0.j4ipo8l.mongodb.net/db-graphql"
+  "mongodb+srv://Andrei:jw1914@cluster0.j4ipo8l.mongodb.net/db-graphql",
+  { useNewUrlParser: true }
 );
 
 app.use(
