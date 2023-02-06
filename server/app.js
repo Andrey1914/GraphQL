@@ -13,6 +13,7 @@ mongoose.connect(
 );
 
 app.use(cors());
+
 app.use(
   "/graphql",
   graphqlHTTP({
